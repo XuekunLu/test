@@ -6,4 +6,4 @@ before_install:
   - docker build . -t build
 
 script:
-  -docker run -v $(pwd):/app build pytest -v .
+  - docker run -v $(pwd):/app build pytest -v .
